@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/bradleywalden`,
   siteMetadata: {
     title: 'Bradley Walden',
   },

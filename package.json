@@ -26,10 +26,10 @@
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "rm -rf .cache && gatsby build --prefix-paths && gh-pages -d public",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "start": "gatsby develop"
   },
   "devDependencies": {
+    "gh-pages": "^1.2.0",
     "prettier": "^1.13.7"
   },
   "repository": {
