@@ -1,0 +1,19 @@
+.bg-container {
+  position: relative;
+}
+
+.bg-image {
+  height: 100vh;
+}
+
+.content {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  a {
+    color: white;
+  }
+}
