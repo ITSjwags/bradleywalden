@@ -1,33 +1,27 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+// images
+import IconInstagram from '-!svg-react-loader?name=Instagram!../images/instagram.svg';
+import IconTwitter from '-!svg-react-loader?name=Twitter!../images/twitter.svg';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
+const Header = () => (
+  <header className="header">
+    <Link
+      className="logo"
+      to="/"
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      BW
+    </Link>
+
+    <div className="socials">
+      <a href="https://twitter.com/bradleywalden" target="_blank">
+        <IconTwitter />
+      </a>
+      <a href="https://instagram.com/bradley.walden" target="_blank">
+        <IconInstagram />
+      </a>
     </div>
-  </div>
+  </header>
 )
 
-export default Header
+export default Header;

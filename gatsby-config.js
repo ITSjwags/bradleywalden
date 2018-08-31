@@ -4,20 +4,28 @@ module.exports = {
     title: 'Bradley Walden',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Playfair\:700`,
+          `Poppins\:400,700`
+        ]
+      }
+    },
     {
       resolve: "gatsby-plugin-postcss-sass",
       options: {
         postCssPlugins: [require('autoprefixer')()]
       },
     },
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-react-svg',
       options: {
-        fonts: [
-          `Lora\:400,700`,
-          `Montserrat\:400,700,900`
-        ]
+        rule: {
+          include: `${__dirname}/src/images`
+        }
       }
     },
     {

@@ -1,7 +1,9 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+// components
+import Header from '../components/header'
 // styles
 import 'sanitize.css';
 import '../styles/index.scss';
@@ -26,11 +28,13 @@ export default class Layout extends Component {
             className="bg-image"
             sizes={bg.sizes}
           />
-
-          <div className="content">
-            {children()}
-          </div>
         </div>
+
+        <main className="content">
+          <Header />
+
+          {children()}
+        </main>
       </div>
     )
   }
@@ -47,8 +51,8 @@ export const query = graphql`
         title
       }
     }
-    bg: imageSharp(id: {regex: "/bg.jpg/"}) {
-      sizes(maxWidth: 1240) {
+    bg: imageSharp(id: {regex: "/bg.png/"}) {
+      sizes(maxWidth: 1440) {
         ...GatsbyImageSharpSizes
       }
     }
