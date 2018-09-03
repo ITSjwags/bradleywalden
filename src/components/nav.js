@@ -4,8 +4,8 @@ import Link from 'gatsby-link';
 import IconInstagram from '-!svg-react-loader?name=Instagram!../images/instagram.svg';
 import IconTwitter from '-!svg-react-loader?name=Twitter!../images/twitter.svg';
 
-const Header = () => (
-  <header className="header">
+const Nav = () => (
+  <nav className="nav">
     <Link
       className="logo"
       to="/"
@@ -21,7 +21,7 @@ const Header = () => (
         <IconInstagram />
       </a>
     </div>
-  </header>
+  </nav>
 )
 
-export default Header;
+export default Nav;

@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
 // components
-import Header from '../components/header'
+import Nav from '../components/nav';
+import Bio from '../components/bio';
 // styles
 import 'sanitize.css';
 import '../styles/index.scss';
@@ -23,16 +24,19 @@ export default class Layout extends Component {
           ]}
         />
 
-        <div className="bg-container">
-          <Img
-            className="bg-image"
-            sizes={bg.sizes}
-          />
-        </div>
+        <header className="header">
+          <div className="bg-container">
+            <Img
+              className="bg-image"
+              sizes={bg.sizes}
+            />
+          </div>
+
+          <Nav />
+          <Bio />
+        </header>
 
         <main className="content">
-          <Header />
-
           {children()}
         </main>
       </div>

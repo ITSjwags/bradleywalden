@@ -1,4 +1,6 @@
 /* global */
+@import './colors';
+
 html, body {
   color: white;
   font-size: 18px;
@@ -7,76 +9,57 @@ html, body {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin: 0;
+  padding: 0 0 5px 0;
+
+  @media(min-width: 640px) {
+    font-size: 48px;
+  }
 }
 
 h3 {
-  color: #EEBB94;
+  color: $peach;
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 45px;
+  margin: 0;
+  padding: 0 0 45px 0;
 }
 
 h4 {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0 0 10px 0;
 }
 
 p {
-  margin-bottom: 35px;
+  margin: 0;
+  padding: 0 0 35px 0;
 }
 
-/* header */
-.header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px;
-}
-
-.logo {
-  color: #EEBB94;
-  font-size: 32px;
-  font-weight: 700;
+.link {
+  color: white;
+  font-weight: bold;
   text-decoration: none;
   transition: all 250ms ease;
-}
 
-.socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  > a {
-    margin: 0 10px;
-
-    > svg {
-      transition: all 250ms ease;
-    }
-
-    &:hover > svg {
-      transform: scale(1.2) rotate(15deg);
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }
 
-/* background */
-.bg-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.link--colored {
+  color: $peach;
 }
 
-.bg-image {
-  height: 100vh;
-}
+/* components */
+@import './header';
 
 /* content */
 .content {
+  background: $black;
   color: white;
   position: relative;
   // top: 50%;

@@ -1,0 +1,89 @@
+@import './colors';
+
+.header {
+  position: relative;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @media(min-width: 640px) {
+    padding: 10px 30px;
+  }
+}
+
+.logo {
+  color: $peach;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 250ms ease;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > a {
+    margin: 0 10px;
+
+    > svg {
+      transition: all 250ms ease;
+    }
+
+    &:hover > svg {
+      transform: scale(1.2) rotate(15deg);
+    }
+  }
+}
+
+.bg-image {
+  // min-width: 450px;
+  height: 100vh;
+
+  @media(min-width: 640px) {
+    height: 100vh;
+  }
+}
+
+.bio {
+  padding: 10px 20px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  max-width: 520px;
+
+  @media(min-width: 640px) {
+    padding: 10px 30px;
+    top: 150px;
+  }
+}
+
+.icon--colored {
+  align-items: center;
+  background: $peach;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  margin-right: 10px;
+  width: 40px;
+
+  > svg {
+    color: $black;
+  }
+
+  @media(min-width: 640px) {
+    height: 48px;
+    width: 48px;
+  }
+}
