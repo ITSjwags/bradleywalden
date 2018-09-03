@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
 const SongwritingPage = () => (
-  <div>
-    <h1>This will be the songwriting page.</h1>
-    <Link to="/">Go back to the homepage</Link>
+  <div className="Songwriting">
+    <h3>Songwriting</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum accumsan dolor sed consequat. Nullam euismod lectus sit amet ante dictum, et consectetur ligula luctus. Curabitur sodales elit nec iaculis interdum. Vestibulum vulputate tortor quis neque porttitor, eu fringilla tortor malesuada. Donec eros libero, hendrerit vel ipsum vitae, tempor consectetur ante.</p>
   </div>
 )
 

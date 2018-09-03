@@ -6,18 +6,42 @@ import Link from 'gatsby-link';
 // components
 import Nav from '../components/nav';
 import Bio from '../components/bio';
+import Lessons from '../components/lessons';
+import Songwriting from '../components/songwriting';
 // styles
 import 'sanitize.css';
 import '../styles/index.scss';
 
 export default class Layout extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showAllContent: false
+    }
+  }
+  componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.resize.bind(this));
+  }
+
+  resize() {
+    this.setState({
+      showAllContent: (window.innerWidth < 640)
+    });
+  }
+
   render() {
     const { data, children, location: { pathname } } = this.props;
     const { bg, site } = data;
+    const { showAllContent } = this.state;
     const activePage = pathname.split('/')[1];
 
     return (
-      <div>
+      <div className={activePage ? 'is-active' : ''}>
         <Helmet
           title={site.siteMetadata.title}
           meta={[
@@ -60,6 +84,17 @@ export default class Layout extends Component {
         <main className="content">
           {/* only need this if we use actual pages */}
           {/* {children()} */}
+          {(showAllContent || activePage === 'lessons') && <Lessons />}
+          {(showAllContent || activePage === 'songwriting') && <Songwriting />}
+
+          {(showAllContent || activePage) &&
+            <Link
+              className="close"
+              to="/"
+            >
+              +
+          </Link>
+          }
         </main>
       </div>
     )

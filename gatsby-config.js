@@ -9,7 +9,7 @@ module.exports = {
       options: {
         fonts: [
           `Playfair\:700`,
-          `Poppins\:400,700`
+          `Poppins\:200,400,700`
         ]
       }
     },
