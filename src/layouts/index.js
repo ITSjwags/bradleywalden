@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Img from 'gatsby-image';
+import Link from 'gatsby-link';
 // components
 import Nav from '../components/nav';
 import Bio from '../components/bio';
@@ -11,8 +12,9 @@ import '../styles/index.scss';
 
 export default class Layout extends Component {
   render() {
-    const { data, children } = this.props;
+    const { data, children, location: { pathname } } = this.props;
     const { bg, site } = data;
+    const activePage = pathname.split('/')[1];
 
     return (
       <div>
@@ -25,19 +27,39 @@ export default class Layout extends Component {
         />
 
         <header className="header">
-          <div className="bg-container">
-            <Img
-              className="bg-image"
-              sizes={bg.sizes}
-            />
-          </div>
-
+          <Img
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              height: "100%",
+              width: "100%"
+            }}
+            sizes={bg.sizes}
+          />
           <Nav />
           <Bio />
+
+          <div className="buttons">
+            <Link
+              className={`button ${activePage === 'lessons' ? 'is-active' : ''}`}
+              to="/lessons"
+            >
+              voice lessons
+            </Link>
+
+            <Link
+              className={`button ${activePage === 'songwriting' ? 'is-active' : ''}`}
+              to="/songwriting"
+            >
+              songwriting
+            </Link>
+          </div>
         </header>
 
         <main className="content">
-          {children()}
+          {/* only need this if we use actual pages */}
+          {/* {children()} */}
         </main>
       </div>
     )

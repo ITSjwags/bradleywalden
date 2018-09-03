@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 // images
-import IconInstagram from '-!svg-react-loader?name=Instagram!../images/instagram.svg';
-import IconTwitter from '-!svg-react-loader?name=Twitter!../images/twitter.svg';
+import IconInstagram from '-!svg-react-loader!../images/instagram.svg';
+import IconTwitter from '-!svg-react-loader!../images/twitter.svg';
 
 const Nav = () => (
   <nav className="nav">
@@ -15,10 +15,14 @@ const Nav = () => (
 
     <div className="socials">
       <a href="https://twitter.com/bradleywalden" target="_blank">
-        <IconTwitter />
+        <IconTwitter
+          className="twitter"
+        />
       </a>
       <a href="https://instagram.com/bradley.walden" target="_blank">
-        <IconInstagram />
+        <IconInstagram
+          className="instagram"
+        />
       </a>
     </div>
   </nav>

@@ -2,9 +2,11 @@
 @import './colors';
 
 html, body {
+  background: $black;
   color: white;
   font-size: 18px;
   font-weight: 400;
+  height: 100%;
   line-height: 1.7;
 }
 
@@ -39,6 +41,11 @@ p {
   padding: 0 0 35px 0;
 }
 
+::selection {
+  background: $black;
+  color: $peach;
+}
+
 .link {
   color: white;
   font-weight: bold;
@@ -54,12 +61,48 @@ p {
   color: $peach;
 }
 
+.buttons {
+  display: none;
+  margin: 30px;
+  z-index: 2;
+
+  @media(min-width: 640px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 250ms ease;
+
+  .buttons & {
+    &:first-of-type {
+      margin-right: 25px;
+    }
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  &.is-active {
+    background: $peach;
+    color: $black;
+  }
+}
+
 /* components */
 @import './header';
 
 /* content */
 .content {
-  background: $black;
   color: white;
   position: relative;
   // top: 50%;
