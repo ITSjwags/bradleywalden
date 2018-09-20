@@ -1,7 +1,7 @@
 import React from 'react';
 
-const LessonsPage = () => (
-  <div className="Lessons">
+const LessonsPage = ({ active }) => (
+  <div className={`Lessons ${active ? 'is-active' : ''}`}>
     <h3>Voice Lessons</h3>
 
     <h4>Pricing Option 1</h4>

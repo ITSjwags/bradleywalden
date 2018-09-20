@@ -11,6 +11,10 @@ import Songwriting from '../components/songwriting';
 // styles
 import 'sanitize.css';
 import '../styles/index.scss';
+// images
+import AppleTouch from '../images/apple-touch-icon.png';
+import Favicon32 from '../images/favicon-32x32.png';
+import Favicon16 from '../images/favicon-16x16.png';
 
 export default class Layout extends Component {
   constructor(props) {
@@ -35,7 +39,7 @@ export default class Layout extends Component {
   }
 
   render() {
-    const { data, children, location: { pathname } } = this.props;
+    const { data, location: { pathname } } = this.props;
     const { bg, site } = data;
     const { showAllContent } = this.state;
     const activePage = pathname.split('/')[1];
@@ -47,8 +51,14 @@ export default class Layout extends Component {
           meta={[
             { name: 'description', content: 'Personal website for Bradley Walden.' },
             { name: 'keywords', content: 'bradley walden, voice lessons, songwriting, emarosa, music, band' },
+            { name: 'msapplication-TileColor', content: '#00000'},
+            { name: 'theme-color', content: '#00000'}
           ]}
-        />
+        >
+          <link rel="apple-touch-icon" sizes="180x180" href={AppleTouch} />
+          <link rel="icon" type="image/png" sizes="32x32" href={Favicon32} />
+          <link rel="icon" type="image/png" sizes="16x16" href={Favicon16} />
+        </Helmet>
 
         <header className="header">
           <Img
@@ -82,10 +92,8 @@ export default class Layout extends Component {
         </header>
 
         <main className="content">
-          {/* only need this if we use actual pages */}
-          {/* {children()} */}
-          {(showAllContent || activePage === 'lessons') && <Lessons />}
-          {(showAllContent || activePage === 'songwriting') && <Songwriting />}
+          <Lessons active={(showAllContent || activePage === 'lessons')} />
+          <Songwriting active={(showAllContent || activePage === 'songwriting')} />
 
           {(showAllContent || activePage) &&
             <Link
@@ -99,10 +107,6 @@ export default class Layout extends Component {
       </div>
     )
   }
-}
-
-Layout.propTypes = {
-  children: PropTypes.func,
 }
 
 export const query = graphql`
