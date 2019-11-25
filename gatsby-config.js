@@ -16,7 +16,6 @@ module.exports = {
         postCssPlugins: [require('autoprefixer')()],
       },
     },
-    'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-react-svg',
