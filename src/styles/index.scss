@@ -1,10 +1,11 @@
 /* global */
 @import './colors';
 
-html, body {
+html,
+body {
   background: $black;
   color: white;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 18px;
   font-weight: 400;
   height: 100%;
@@ -12,20 +13,20 @@ html, body {
 }
 
 h2 {
-  font-family: "Playfair";
+  font-family: 'Playfair';
   font-size: 40px;
   font-weight: 700;
   margin: 0;
   padding: 0 0 5px 0;
 
-  @media(min-width: 640px) {
+  @media (min-width: 640px) {
     font-size: 48px;
   }
 }
 
 h3 {
   color: $peach;
-  font-family: "Playfair";
+  font-family: 'Playfair';
   font-size: 32px;
   font-weight: 700;
   margin: 0;
@@ -69,7 +70,7 @@ p {
   padding: 30px;
   z-index: 2;
 
-  @media(min-width: 640px) {
+  @media (min-width: 640px) {
     display: flex;
     align-items: center;
 
@@ -91,8 +92,9 @@ p {
   transition: all 250ms ease;
 
   .buttons & {
-    &:first-of-type {
-      margin-right: 25px;
+    margin-right: 25px;
+    &:last-of-type {
+      margin-right: 0;
     }
   }
 
