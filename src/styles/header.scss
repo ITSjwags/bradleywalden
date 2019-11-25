@@ -3,7 +3,7 @@
 .header {
   position: relative;
 
-  @media(min-width: 640px) {
+  @media (min-width: 640px) {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -18,7 +18,7 @@
   padding: 10px 20px;
   position: relative;
 
-  @media(min-width: 640px) {
+  @media (min-width: 640px) {
     padding: 10px 30px;
   }
 }
@@ -48,21 +48,54 @@
       transform: scale(1.3);
 
       &.instagram {
-        background:
-          radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-          radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-          radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-          radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-          radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-          radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-          radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-          linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-        border-radius: .2em;
+        background: radial-gradient(
+            circle farthest-corner at 35% 90%,
+            #fec564,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle farthest-corner at 0 140%,
+            #fec564,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 0 -25%,
+            #5258cf,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 20% -50%,
+            #5258cf,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 100% 0,
+            #893dc2,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 60% -20%,
+            #893dc2,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 100% 100%,
+            #d9317a,
+            transparent
+          ),
+          linear-gradient(
+            #6559ca,
+            #bc318f 30%,
+            #e33f5f 50%,
+            #f77638 70%,
+            #fec66d 100%
+          );
+        border-radius: 0.2em;
         padding: 2px;
       }
 
       &.twitter {
-        color: #1DA1F2;
+        color: #1da1f2;
       }
     }
   }
@@ -77,8 +110,20 @@
   position: relative;
   max-width: 640px;
 
-  @media(min-width: 640px) {
+  @media (min-width: 640px) {
     padding: 30px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -97,11 +142,11 @@
     transition: all 250ms ease;
 
     .link:hover & {
-      transform: scale(1.1);
+      animation: bounce 750ms ease-in-out forwards;
     }
   }
 
-  @media(min-width: 640px) {
+  @media (min-width: 640px) {
     height: 48px;
     width: 48px;
   }
