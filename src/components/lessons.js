@@ -1,18 +1,24 @@
-import React from 'react';
+import React from 'react'
 
 const LessonsPage = ({ active }) => (
   <div className={`Lessons ${active ? 'is-active' : ''}`}>
     <h3>Voice Lessons</h3>
 
-    <h4>Pricing Option 1</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum accumsan dolor sed consequat. Nullam euismod lectus sit amet ante dictum, et consectetur ligula luctus.</p>
-
-    <h4>Pricing Option 2</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum accumsan dolor sed consequat. Nullam euismod lectus sit amet ante dictum, et consectetur ligula luctus.</p>
-
-    <h4>Pricing Option 3</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum accumsan dolor sed consequat. Nullam euismod lectus sit amet ante dictum, et consectetur ligula luctus.</p>
+    <p>
+      Over the years I’ve given hundreds of people tips, tricks, and walked them
+      through the process of growing their voice.
+    </p>
+    <p>
+      Everyone has individual desires, things they want to work on, problems
+      that they have. I’m here to help build your confidence and knowledge base
+      to help you become the singer you’d like to be!
+    </p>
+    <p>
+      Beginners are more than welcome, everyone has to start somewhere, I did it
+      the same as you are now!
+    </p>
+    <p>Email now for pricing & to set up your first lesson!</p>
   </div>
 )
 
-export default LessonsPage;
+export default LessonsPage

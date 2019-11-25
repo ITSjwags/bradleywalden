@@ -47,9 +47,10 @@ export default class Layout extends Component {
     const { bg, site } = data
     const { showAllContent } = this.state
     const activePage = pathname.split('/')[1]
+    const goodUrl = activePage === 'lessons' || activePage === 'lyricsheet'
 
     return (
-      <div className={activePage ? 'is-active' : ''}>
+      <div className={!!activePage && goodUrl ? 'is-active' : ''}>
         <Helmet
           title={site.siteMetadata.title}
           meta={[
@@ -95,14 +96,14 @@ export default class Layout extends Component {
               voice lessons
             </Link>
 
-            <Link
+            {/* <Link
               className={`button ${
                 activePage === 'songwriting' ? 'is-active' : ''
               }`}
               to="/songwriting"
             >
               songwriting
-            </Link>
+            </Link> */}
 
             <Link
               className={`button ${
