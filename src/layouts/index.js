@@ -118,9 +118,9 @@ export default class Layout extends Component {
 
         <main className="content">
           <Lessons active={showAllContent || activePage === 'lessons'} />
-          <Songwriting
+          {/* <Songwriting
             active={showAllContent || activePage === 'songwriting'}
-          />
+          /> */}
           <Lyrics active={showAllContent || activePage === 'lyricsheet'} />
 
           {(showAllContent || activePage) && (
