@@ -5,6 +5,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-153413039-1',
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Playfair\:700`, `Poppins\:200,400,700`],
@@ -30,12 +36,6 @@ module.exports = {
       options: {
         name: 'img',
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-153413039-1',
       },
     },
     'gatsby-transformer-sharp',
