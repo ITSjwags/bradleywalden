@@ -32,7 +32,7 @@ const LyricsPage = ({ active }) => (
           maxlength="200"
           placeholder="Song Choice"
         />
-        <br />
+        <p className="buynow-price">$45</p>
         <input
           className="buynow"
           type="image"

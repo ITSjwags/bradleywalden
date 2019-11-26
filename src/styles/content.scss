@@ -101,14 +101,18 @@
 
 .buynow {
   border-radius: 0;
-  margin-top: 15px;
+  margin-top: 10px;
   width: 140px;
 }
 
 .buynow-inputs {
-  > p {
+  > p:not(.buynow-price) {
     padding-bottom: 5px;
   }
+}
+
+.buynow-price {
+  padding: 10px 0 0 0;
 }
 
 .buynow-song {
