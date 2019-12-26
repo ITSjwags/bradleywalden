@@ -80,6 +80,7 @@
 }
 
 .Lyrics {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   opacity: 0;
   padding: 40px 20px 20px 20px;
   position: absolute;
@@ -95,6 +96,7 @@
   }
 
   @media (min-width: 640px) {
+    border-bottom: 0;
     padding: 30px;
   }
 }

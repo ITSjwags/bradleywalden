@@ -89,6 +89,15 @@ export default class Layout extends Component {
           <div className="buttons">
             <Link
               className={`button ${
+                activePage === 'lyricsheet' ? 'is-active' : ''
+              }`}
+              to="/lyricsheet"
+            >
+              Handwritten Lyrics
+            </Link>
+
+            <Link
+              className={`button ${
                 activePage === 'lessons' ? 'is-active' : ''
               }`}
               to="/lessons"
@@ -104,24 +113,15 @@ export default class Layout extends Component {
             >
               songwriting
             </Link> */}
-
-            <Link
-              className={`button ${
-                activePage === 'lyricsheet' ? 'is-active' : ''
-              }`}
-              to="/lyricsheet"
-            >
-              Handwritten Lyrics
-            </Link>
           </div>
         </header>
 
         <main className="content">
+          <Lyrics active={showAllContent || activePage === 'lyricsheet'} />
           <Lessons active={showAllContent || activePage === 'lessons'} />
           {/* <Songwriting
             active={showAllContent || activePage === 'songwriting'}
           /> */}
-          <Lyrics active={showAllContent || activePage === 'lyricsheet'} />
 
           {(showAllContent || activePage) && (
             <Link className="close" to="/">
