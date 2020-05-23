@@ -10,8 +10,8 @@ const SongShopPage = ({ active }) => (
     </p>
     <p>The Bradley Scott Song Shop is now open!</p>
     <p>
-      Whatever you’d like your song to be about, whoever you’d like your songs
-      to be for, it’s completely up to you! You can help with the lyrics, share
+      Whatever you’d like your song to be about, whoever you’d like your song to
+      be for, it’s completely up to you! You can help with the lyrics, share
       your story, tell someone how you feel. The sky is the limit!
     </p>
 
@@ -55,7 +55,7 @@ const SongShopPage = ({ active }) => (
       <span>Full Song: $200</span>
       <br />
       3-4 minute full length piano/acoustic style recording for you by Bradley
-      Scott
+      Scott.
     </p>
 
     <form
@@ -86,8 +86,8 @@ const SongShopPage = ({ active }) => (
     <p className="Songwriting-title">
       <span>Diamond Song: $375</span>
       <br />
-      3-4 minute full length & full production song. Drums, guitar, bass, vocal.
-      This is the complete package for you written by Bradley Scott.
+      3-4 minute full length & full production song. Drums, guitar, bass,
+      vocals. This is the complete package for you written by Bradley Scott.
     </p>
 
     <form
