@@ -36,7 +36,7 @@
 }
 
 .Lessons {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   opacity: 0;
   padding: 40px 20px 20px 20px;
   position: absolute;
@@ -104,7 +104,7 @@
 .Songshop {
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   opacity: 0;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 40px 20px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -125,7 +125,7 @@
 
 .Songwriting-title {
   > span {
-    color: $peach;
+    color: $primary;
     font-weight: bold;
   }
 }

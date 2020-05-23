@@ -17,7 +17,10 @@ const LessonsPage = ({ active }) => (
       Beginners are more than welcome, everyone has to start somewhere, I did it
       the same as you are now!
     </p>
-    <p>Email now for pricing & to set up your first lesson!</p>
+    <p>
+      <a href="mailto:info@bradleywalden.com">Email</a> now for pricing & to set
+      up your first lesson!
+    </p>
   </div>
 )
 

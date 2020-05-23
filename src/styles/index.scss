@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-  color: $peach;
+  color: $primary;
   font-family: 'Playfair';
   font-size: 32px;
   font-weight: 700;
@@ -45,9 +45,13 @@ p {
   padding: 0 0 25px 0;
 }
 
+a {
+  color: $primary;
+}
+
 ::selection {
   background: $black;
-  color: $peach;
+  color: $primary;
 }
 
 .link {
@@ -62,7 +66,7 @@ p {
 }
 
 .link--colored {
-  color: $peach;
+  color: $primary;
 }
 
 .buttons {
@@ -103,7 +107,7 @@ p {
   }
 
   &.is-active {
-    background: $peach;
+    background: $primary;
     color: $black;
   }
 }
