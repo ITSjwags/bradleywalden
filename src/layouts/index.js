@@ -7,7 +7,8 @@ import Link from 'gatsby-link'
 import Nav from '../components/nav'
 import Bio from '../components/bio'
 import Lessons from '../components/lessons'
-import Songwriting from '../components/songwriting'
+import Songshop from '../components/songshop'
+// import Songwriting from '../components/songwriting'
 import Lyrics from '../components/lyrics'
 // styles
 import 'sanitize.css'
@@ -47,7 +48,10 @@ export default class Layout extends Component {
     const { bg, site } = data
     const { showAllContent } = this.state
     const activePage = pathname.split('/')[1]
-    const goodUrl = activePage === 'lessons' || activePage === 'lyricsheet'
+    const goodUrl =
+      activePage === 'lessons' ||
+      activePage === 'lyricsheet' ||
+      activePage === 'songshop'
 
     return (
       <div className={!!activePage && goodUrl ? 'is-active' : ''}>
@@ -89,6 +93,15 @@ export default class Layout extends Component {
           <div className="buttons">
             <Link
               className={`button ${
+                activePage === 'songshop' ? 'is-active' : ''
+              }`}
+              to="/songshop"
+            >
+              Song Shop
+            </Link>
+
+            <Link
+              className={`button ${
                 activePage === 'lyricsheet' ? 'is-active' : ''
               }`}
               to="/lyricsheet"
@@ -102,7 +115,7 @@ export default class Layout extends Component {
               }`}
               to="/lessons"
             >
-              voice lessons
+              Voice Lessons
             </Link>
 
             {/* <Link
@@ -117,6 +130,7 @@ export default class Layout extends Component {
         </header>
 
         <main className="content">
+          <Songshop active={showAllContent || activePage === 'songshop'} />
           <Lyrics active={showAllContent || activePage === 'lyricsheet'} />
           <Lessons active={showAllContent || activePage === 'lessons'} />
           {/* <Songwriting
