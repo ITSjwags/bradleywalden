@@ -23,12 +23,13 @@ const SongShopPage = ({ active }) => (
 
     <p className="Songwriting-title">
       <span>Partial Song: $100</span>
-      <br />2 minute piano/acoustic style recording for you by Bradley Scott.
+      <br />
+      1-2 minute piano/acoustic style recording for you by Bradley Scott.
     </p>
 
-    <p className="text-warn">SOLD OUT</p>
+    {/* <p className="text-warn">SOLD OUT</p> */}
 
-    {/* <form
+    <form
       action="https://www.paypal.com/cgi-bin/webscr"
       method="post"
       target="_top"
@@ -48,7 +49,7 @@ const SongShopPage = ({ active }) => (
         width="1"
         height="1"
       />
-    </form> */}
+    </form>
 
     <p></p>
     <p></p>
@@ -60,9 +61,9 @@ const SongShopPage = ({ active }) => (
       Scott.
     </p>
 
-    <p className="text-warn">SOLD OUT</p>
+    {/* <p className="text-warn">SOLD OUT</p> */}
 
-    {/* <form
+    <form
       action="https://www.paypal.com/cgi-bin/webscr"
       method="post"
       target="_top"
@@ -82,7 +83,7 @@ const SongShopPage = ({ active }) => (
         width="1"
         height="1"
       />
-    </form> */}
+    </form>
 
     <p></p>
     <p></p>
@@ -94,9 +95,9 @@ const SongShopPage = ({ active }) => (
       vocals. This is the complete package for you written by Bradley Scott.
     </p>
 
-    <p className="text-warn">SOLD OUT</p>
+    {/* <p className="text-warn">SOLD OUT</p> */}
 
-    {/* <form
+    <form
       action="https://www.paypal.com/cgi-bin/webscr"
       method="post"
       target="_top"
@@ -116,7 +117,7 @@ const SongShopPage = ({ active }) => (
         width="1"
         height="1"
       />
-    </form> */}
+    </form>
   </div>
 )
 
