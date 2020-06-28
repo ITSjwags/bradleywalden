@@ -60,7 +60,7 @@ export default class Layout extends Component {
           meta={[
             {
               name: 'description',
-              content: 'Personal website for Bradley Walden.',
+              content: 'Bradley Walden: singer, songwriter, performer.',
             },
             {
               name: 'keywords',
@@ -85,40 +85,42 @@ export default class Layout extends Component {
               height: '100%',
               width: '100%',
             }}
+            // objectFit="cover"
+            // objectPosition="top"
             sizes={bg.sizes}
           />
-          <Nav />
-          <Bio />
+          {/* <Nav /> */}
+          {/* <Bio /> */}
 
-          <div className="buttons">
-            <Link
+          {/* <div className="buttons"> */}
+          {/* <Link
               className={`button ${
                 activePage === 'songshop' ? 'is-active' : ''
               }`}
               to="/songshop"
             >
               Song Shop
-            </Link>
+            </Link> */}
 
-            <Link
+          {/* <Link
               className={`button ${
                 activePage === 'lyricsheet' ? 'is-active' : ''
               }`}
               to="/lyricsheet"
             >
               Handwritten Lyrics
-            </Link>
+            </Link> */}
 
-            <Link
+          {/* <Link
               className={`button ${
                 activePage === 'lessons' ? 'is-active' : ''
               }`}
               to="/lessons"
             >
               Voice Lessons
-            </Link>
+            </Link> */}
 
-            {/* <Link
+          {/* <Link
               className={`button ${
                 activePage === 'songwriting' ? 'is-active' : ''
               }`}
@@ -126,23 +128,23 @@ export default class Layout extends Component {
             >
               songwriting
             </Link> */}
-          </div>
+          {/* </div> */}
         </header>
 
-        <main className="content">
-          <Songshop active={showAllContent || activePage === 'songshop'} />
-          <Lyrics active={showAllContent || activePage === 'lyricsheet'} />
-          <Lessons active={showAllContent || activePage === 'lessons'} />
-          {/* <Songwriting
+        {/* <main className="content"> */}
+        {/* <Songshop active={showAllContent || activePage === 'songshop'} /> */}
+        {/* <Lyrics active={showAllContent || activePage === 'lyricsheet'} /> */}
+        {/* <Lessons active={showAllContent || activePage === 'lessons'} /> */}
+        {/* <Songwriting
             active={showAllContent || activePage === 'songwriting'}
           /> */}
 
-          {(showAllContent || activePage) && (
+        {/* {(showAllContent || activePage) && (
             <Link className="close" to="/">
               +
             </Link>
-          )}
-        </main>
+          )} */}
+        {/* </main> */}
       </div>
     )
   }
