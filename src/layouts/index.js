@@ -8,7 +8,6 @@ import Nav from '../components/nav'
 import Bio from '../components/bio'
 import Lessons from '../components/lessons'
 import Songshop from '../components/songshop'
-// import Songwriting from '../components/songwriting'
 import Lyrics from '../components/lyrics'
 // styles
 import 'sanitize.css'
@@ -85,66 +84,52 @@ export default class Layout extends Component {
               height: '100%',
               width: '100%',
             }}
-            // objectFit="cover"
-            // objectPosition="top"
             sizes={bg.sizes}
           />
-          {/* <Nav /> */}
-          {/* <Bio /> */}
+          <Nav />
+          <Bio />
 
-          {/* <div className="buttons"> */}
-          {/* <Link
+          <div className="buttons">
+            <Link
               className={`button ${
                 activePage === 'songshop' ? 'is-active' : ''
               }`}
               to="/songshop"
             >
               Song Shop
-            </Link> */}
+            </Link>
 
-          {/* <Link
+            <Link
               className={`button ${
                 activePage === 'lyricsheet' ? 'is-active' : ''
               }`}
               to="/lyricsheet"
             >
               Handwritten Lyrics
-            </Link> */}
+            </Link>
 
-          {/* <Link
+            <Link
               className={`button ${
                 activePage === 'lessons' ? 'is-active' : ''
               }`}
               to="/lessons"
             >
               Voice Lessons
-            </Link> */}
-
-          {/* <Link
-              className={`button ${
-                activePage === 'songwriting' ? 'is-active' : ''
-              }`}
-              to="/songwriting"
-            >
-              songwriting
-            </Link> */}
-          {/* </div> */}
+            </Link>
+          </div>
         </header>
 
-        {/* <main className="content"> */}
-        {/* <Songshop active={showAllContent || activePage === 'songshop'} /> */}
-        {/* <Lyrics active={showAllContent || activePage === 'lyricsheet'} /> */}
-        {/* <Lessons active={showAllContent || activePage === 'lessons'} /> */}
-        {/* <Songwriting
-            active={showAllContent || activePage === 'songwriting'}
-          /> */}
+        <main className="content">
+          <Songshop active={showAllContent || activePage === 'songshop'} />
+          <Lyrics active={showAllContent || activePage === 'lyricsheet'} />
+          <Lessons active={showAllContent || activePage === 'lessons'} />
 
-        {/* {(showAllContent || activePage) && (
+          {(showAllContent || activePage) && (
             <Link className="close" to="/">
               +
             </Link>
-          )} */}
-        {/* </main> */}
+          )}
+        </main>
       </div>
     )
   }

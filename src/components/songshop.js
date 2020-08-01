@@ -22,9 +22,8 @@ const SongShopPage = ({ active }) => (
     <p></p>
 
     <p className="Songwriting-title">
-      <span>Partial Song: $100</span>
-      <br />
-      1-2 minute piano/acoustic style recording for you by Bradley Scott.
+      <span>Simple Song: $100</span>
+      <br />A simple piano/acoustic style recording for you by Bradley Scott.
     </p>
 
     {/* <p className="text-warn">SOLD OUT</p> */}
@@ -56,8 +55,7 @@ const SongShopPage = ({ active }) => (
 
     <p className="Songwriting-title">
       <span>Full Song: $200</span>
-      <br />
-      3-4 minute full length piano/acoustic style recording for you by Bradley
+      <br />A full length piano/acoustic style recording for you by Bradley
       Scott.
     </p>
 
@@ -90,9 +88,8 @@ const SongShopPage = ({ active }) => (
 
     <p className="Songwriting-title">
       <span>Diamond Song: $375</span>
-      <br />
-      3-4 minute full length & full production song. Drums, guitar, bass,
-      vocals. This is the complete package for you written by Bradley Scott.
+      <br />A full length & full production song. Drums, guitar, bass, vocals.
+      This is the complete package for you written by Bradley Scott.
     </p>
 
     {/* <p className="text-warn">SOLD OUT</p> */}
