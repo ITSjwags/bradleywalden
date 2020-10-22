@@ -11,7 +11,7 @@ const Nav = () => (
     </Link>
 
     <div className="socials">
-      <a href="https://twitter.com/bradleywalden" target="_blank">
+      <a href="https://twitter.com/badleyscott" target="_blank">
         <IconTwitter className="twitter" />
       </a>
       <a href="https://instagram.com/bradleyscott" target="_blank">
