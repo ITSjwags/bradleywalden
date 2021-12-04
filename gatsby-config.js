@@ -1,7 +1,7 @@
 module.exports = {
   // pathPrefix: `/bradleywalden`,
   siteMetadata: {
-    title: 'Bradley Walden',
+    title: 'Badley',
   },
   plugins: [
     {
@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Playfair\:700`, `Poppins\:200,400,700`],
+        fonts: [`Playfair\:700`, `Poppins\:200,400,700`, `Romanesco\:400`],
       },
     },
     {

@@ -13,10 +13,7 @@ const LessonsPage = ({ active }) => (
       that they have. I’m here to help build your confidence and knowledge base
       to help you become the singer you’d like to be!
     </p>
-    <p>
-      Beginners are more than welcome, everyone has to start somewhere, I did it
-      the same as you are now!
-    </p>
+    <p>Beginners are more than welcome, everyone has to start somewhere.</p>
     <p>
       <a href="mailto:info@bradleywalden.com">Email</a> now for pricing & to set
       up your first lesson!

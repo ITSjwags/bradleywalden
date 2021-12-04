@@ -142,7 +142,7 @@ export const query = graphql`
         title
       }
     }
-    bg: imageSharp(id: { regex: "/bg3.jpeg/" }) {
+    bg: imageSharp(id: { regex: "/bg.jpg/" }) {
       sizes(maxWidth: 1440) {
         ...GatsbyImageSharpSizes
       }

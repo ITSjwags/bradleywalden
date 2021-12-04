@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-  color: $primary;
+  color: $yellow;
   font-family: 'Playfair';
   font-size: 32px;
   font-weight: 700;
@@ -46,12 +46,12 @@ p {
 }
 
 a {
-  color: $primary;
+  color: $yellow;
 }
 
 ::selection {
   background: $black;
-  color: $primary;
+  color: $yellow;
 }
 
 .text-warn {
@@ -70,7 +70,7 @@ a {
 }
 
 .link--colored {
-  color: $primary;
+  color: $yellow;
 }
 
 .buttons {
@@ -111,7 +111,7 @@ a {
   }
 
   &.is-active {
-    background: $primary;
+    background: $yellow;
     color: $black;
   }
 }

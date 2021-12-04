@@ -5,10 +5,10 @@ const SongShopPage = ({ active }) => (
     <h3>Song Shop</h3>
 
     <p>
-      Ever wanted your own personal song recorded? Maybe a love song for your
-      pup? (Please order a love song for your pup).
+      Ever wanted your own personal song? Maybe a love song for your pup?
+      (Please order a love song for your pup).
     </p>
-    <p>The Bradley Scott Song Shop is now open!</p>
+
     <p>
       Whatever you’d like your song to be about, whoever you’d like your song to
       be for, it’s completely up to you! You can help with the lyrics, share
@@ -23,7 +23,7 @@ const SongShopPage = ({ active }) => (
 
     <p className="Songwriting-title">
       <span>Simple Song: $100</span>
-      <br />A simple piano/acoustic style recording for you by Bradley Scott.
+      <br />A simple piano/acoustic style recording.
     </p>
 
     {/* <p className="text-warn">SOLD OUT</p> */}
@@ -55,8 +55,7 @@ const SongShopPage = ({ active }) => (
 
     <p className="Songwriting-title">
       <span>Full Song: $200</span>
-      <br />A full length piano/acoustic style recording for you by Bradley
-      Scott.
+      <br />A full length piano/acoustic style recording.
     </p>
 
     {/* <p className="text-warn">SOLD OUT</p> */}
@@ -88,8 +87,7 @@ const SongShopPage = ({ active }) => (
 
     <p className="Songwriting-title">
       <span>Diamond Song: $375</span>
-      <br />A full length & full production song. Drums, guitar, bass, vocals.
-      This is the complete package for you written by Bradley Scott.
+      <br />A full length & full production song. This is the complete package.
     </p>
 
     {/* <p className="text-warn">SOLD OUT</p> */}

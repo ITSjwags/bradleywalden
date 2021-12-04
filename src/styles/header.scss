@@ -7,7 +7,6 @@
   @media (min-width: 640px) {
     display: flex;
     flex-direction: column;
-    // height: 100vh;
     min-height: 500px;
   }
 }
@@ -25,9 +24,12 @@
 }
 
 .logo {
-  color: $primary;
-  font-size: 32px;
-  font-weight: 700;
+  color: white;
+  font-family: 'Romanesco', cursive;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.5;
   text-decoration: none;
   transition: all 250ms ease;
 }
@@ -43,6 +45,15 @@
     > svg {
       color: white;
       transition: all 250ms ease;
+
+      > path {
+        fill: currentColor;
+      }
+
+      &.mail {
+        height: 19px;
+        width: 21px;
+      }
     }
 
     &:hover > svg {
@@ -113,42 +124,5 @@
 
   @media (min-width: 640px) {
     padding: 30px;
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.icon--colored {
-  align-items: center;
-  background: $primary;
-  border-radius: 50%;
-  display: inline-flex;
-  height: 40px;
-  justify-content: center;
-  margin-right: 10px;
-  width: 40px;
-
-  > svg {
-    color: $black;
-    transition: all 250ms ease;
-
-    .link:hover & {
-      animation: bounce 750ms ease-in-out forwards;
-    }
-  }
-
-  @media (min-width: 640px) {
-    height: 48px;
-    width: 48px;
   }
 }
