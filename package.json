@@ -3,6 +3,9 @@
   "description": "Website for Bradley Walden",
   "version": "1.0.0",
   "author": "Jonathan Wagoner <jvwagoner@gmail.com>",
+  "engines": {
+    "node": "10"
+  },
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
@@ -28,7 +31,7 @@
     "develop": "gatsby develop",
     "deploy": "rm -rf .cache && gatsby build --prefix-paths && gh-pages -d public",
     "start": "yarn && yarn develop",
-    "reinstall": "rm -rf node_module && npm i"
+    "reinstall": "rm -rf node_module && yarn"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
